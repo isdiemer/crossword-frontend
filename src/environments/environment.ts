@@ -1,5 +1,5 @@
 export const environment = {
     production: false,
-    apiUrl: process.env['BACKEND_URL'] || 'http://localhost:8080',
+    apiUrl: 'http://localhost:8080',
     openaiApiKey: ''
 }; 
