@@ -1,16 +1,14 @@
+
 {
-    "rewrites": [
-        {
-            "source": "/(.*)",
-            "destination": "/index.html"
-        }
-    ],
-    "env": {
-        "BACKEND_URL": "https://your-backend-url.com"
-    },
-    "build": {
-        "env": {
-            "BACKEND_URL": "https://your-backend-url.com"
-        }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "https://crossword-backend.onrender.com/$1" }
+  ],
+  "functions": {
+    "dist/crossword-frontend/server/*.js": {
+      "runtime": "edge"       // or "nodejs20.x"
     }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "dist/crossword-frontend/server/server.mjs" }
+  ]
 }
