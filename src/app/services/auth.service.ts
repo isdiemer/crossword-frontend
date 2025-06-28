@@ -30,6 +30,7 @@ export class AuthService {
 
     constructor(private http: HttpClient) {
         // Check auth status when service is created
+        //deploy
         this.checkAuthStatus();
     }
 

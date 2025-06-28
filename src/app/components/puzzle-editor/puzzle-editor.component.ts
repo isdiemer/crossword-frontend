@@ -503,7 +503,7 @@ export class PuzzleEditorComponent implements OnInit {
   @Output() puzzleSubmitted = new EventEmitter<void>();
 
   puzzleTitle = '';
-  gridSize = 15;
+  gridSize = 5;
   grid: GridCell[] = [];
   selectedCell: number | null = null;
   selectedClue: number | null = null;
