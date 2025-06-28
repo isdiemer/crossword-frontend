@@ -3,17 +3,10 @@
     {
       "source": "/api/(.*)",
       "destination": "https://crossword-backend.onrender.com/$1"
-    }
-  ],
-  "functions": {
-    "dist/crossword-frontend/server/*.js": {
-      "runtime": "nodejs22.x"
-    }
-  },
-  "routes": [
+    },
     {
-      "src": "/(.*)",
-      "dest": "dist/crossword-frontend/server/server.mjs"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
