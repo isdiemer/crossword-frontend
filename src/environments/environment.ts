@@ -1,4 +1,7 @@
+declare const process: any;
+
 export const environment = {
     production: false,
-    openaiApiKey: 'YOUR_OPENAI_API_KEY_HERE'
+    apiUrl: process.env['BACKEND_URL'] || 'http://localhost:8080',
+    openaiApiKey: ''
 }; 
