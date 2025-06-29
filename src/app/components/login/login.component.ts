@@ -185,7 +185,7 @@ export class LoginComponent {
       next: () => {
         this.successMessage = 'LOGIN SUCCESSFUL!';
         window.location.href =
-          'https://crossword-backend.onrender.com/auth/handshake';
+          'https://crossword-backend.onrender.com/handshake';
         this.isLoading = false;
       },
       error: (error) => {
