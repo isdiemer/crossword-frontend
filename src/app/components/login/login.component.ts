@@ -184,6 +184,8 @@ export class LoginComponent {
     this.authService.login(this.credentials).subscribe({
       next: () => {
         this.successMessage = 'LOGIN SUCCESSFUL!';
+        window.location.href =
+          'https://crossword-backend.onrender.com/auth/handshake';
         this.isLoading = false;
       },
       error: (error) => {
